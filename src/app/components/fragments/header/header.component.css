@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: linear-gradient(black, rgba(0,0,0,0.7), transparent);
+    z-index: 9999;
+}
+
+app-profile-pic {
+    margin-left: auto;
+}

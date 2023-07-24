@@ -1,0 +1,36 @@
+.button{
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    width: fit-content;
+    display: flex;
+    gap: 10px;
+    transition: opacity 0.2s;
+}
+
+.play {
+    background-color: white;
+    color: black;
+}
+
+.plus {
+    background-color: rgba(256, 256, 256, 0.4);
+    color: white;
+}
+
+.icon-img {
+    width: 20px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.button:hover {
+    opacity: 0.7;
+}

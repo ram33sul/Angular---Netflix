@@ -1,0 +1,32 @@
+.container {
+    width: 100vw;
+    padding: 10px 0px 20px 50px;
+    position: relative;
+}
+
+.container::before {
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    right: 0;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.7), transparent);
+    content: '';
+}
+
+.heading {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.thumbnails {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    overflow-x: scroll;
+}
+
+
+.thumbnails::-webkit-scrollbar {
+    display: none;
+}

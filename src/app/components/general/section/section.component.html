@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="heading">
+        {{title}}
+    </div>
+    <div class="thumbnails">
+        <app-thumbnail *ngFor = "let movie of movies" [movie] = "movie"/>
+    </div>
+</div>

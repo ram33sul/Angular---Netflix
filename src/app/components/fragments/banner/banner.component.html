@@ -1,0 +1,25 @@
+<div class="bg-container" [ngStyle] = "{'background-image': 'url('+bgImage+')'}">
+    <div class="container">
+        <app-header></app-header>
+        <div class="content-wrapper">
+            <div class="logo-type-wrapper">
+                <app-netflix-logo-small>
+
+                </app-netflix-logo-small>
+                <div class="type">
+                    {{movie?.media_type?.toUpperCase()}}
+                </div>
+            </div>
+            <div class="title">
+                {{movie?.title ?? movie?.name}}
+            </div>
+            <div class="description">
+                {{movie?.overview}}
+            </div>
+            <div class="buttons-wrapper">
+                <app-button-one type="play" >Play</app-button-one>
+                <app-button-one type="plus" >My List</app-button-one>
+            </div>
+        </div>
+    </div>
+</div>
